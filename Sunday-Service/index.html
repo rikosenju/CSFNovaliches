@@ -9,7 +9,15 @@
 </head>
 <body>
     <nav>
-        <div style="display: flex; align-items: center;">
+
+          <!-- Hamburger icon for mobile -->
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+        <div style="display: flex; align-items: center;" class="nav-container">
           <img src="src/csf_logo.jpg" alt="Logo" class="logo" />
         </div>
         <div class="nav-links" style="display: flex;">
@@ -77,6 +85,13 @@
       <p>Made with ❤️ by KEPLER • v1.0.0</p>
     </div>
   </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.querySelector('.nav-container');
+      nav.classList.toggle('active');
+    }
+  </script>
 
 </body>
 </html>
