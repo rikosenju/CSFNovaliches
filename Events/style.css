@@ -56,7 +56,6 @@ border-radius: 4px;
 
 
 .glassy-box {
-  
   background: rgba(216, 160, 55, 0.1); /* transparent white */
   border-radius: 15px;
   padding: 40px;
@@ -96,13 +95,25 @@ border-radius: 4px;
   }
 
 
+  /* Existing style (fine for desktop) */
+.u_evt_container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+/* Add this for mobile responsiveness */
+@media (max-width: 768px) {
   .u_evt_container {
-    display: flex;
-    justify-content: center; /* or space-between / space-around / flex-start */
-    align-items: flex-start; /* optional – aligns them top aligned */
-    gap: 20px; /* spacing between the two boxes */
-    margin-top: 30px; /* optional spacing from above */
+    flex-direction: column;
+    align-items: center;
   }
+
+  
+}
+
   
   .footer {
     background-color: var(--bg-color); /* your dark background */
@@ -191,16 +202,5 @@ border-radius: 4px;
   }
 }
 
-@media (max-width: 768px) {
-  .u_evt_container {
-    flex-direction: column;
-    align-items: center;
-  }
 
-  .u_evt {
-    width: 90%;
-    height: auto; /* Let it grow naturally */
-    margin-bottom: 20px;
-  }
-}
 

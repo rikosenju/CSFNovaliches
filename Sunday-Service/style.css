@@ -11,7 +11,7 @@
     background-color: var(--bg-color);
     color: var(--text-color);
   }
-  
+
 nav {
 position: sticky;
 top: 0;
@@ -52,16 +52,16 @@ border-radius: 4px;
 
 
 .glassy-box {
-  background: rgba(216, 160, 55, 0.1); /* transparent white */
-  border-radius: 15px;
-  padding: 40px;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  box-shadow: 0 0 30px rgba(216, 160, 55, 0.808);
-  max-width: 800px;
-  margin: 0 auto;
-  border: 1px solid rgba(216, 160, 55, 0.808);
-  justify-content: space-around;
+    background: rgba(216, 160, 55, 0.1); /* transparent white */
+    border-radius: 15px;
+    padding: 40px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(216, 160, 55, 0.808);
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid rgba(216, 160, 55, 0.808);
+    justify-content: space-around;
 }
 
   img {
@@ -90,13 +90,29 @@ border-radius: 4px;
     transform: scale(1.08);
   }
 
+  /* Existing style (fine for desktop) */
+.program_container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+/* Add this for mobile responsiveness */
+@media (max-width: 768px) {
   .program_container {
-    display: flex;
-    justify-content: center; /* or space-between / space-around / flex-start */
-    align-items: flex-start; /* optional – aligns them top aligned */
-    gap: 20px; /* spacing between the two boxes */
-    margin-top: 30px; /* optional spacing from above */
+    flex-direction: column;
+    align-items: center;
   }
+
+  .u_evt {
+    width: 90%; /* or 100%, or whatever looks best */
+    height: auto; /* let content control height */
+    margin-bottom: 20px;
+  }
+}
+
 
   .footer {
     background-color: var(--bg-color); /* your dark background */
