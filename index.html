@@ -11,12 +11,18 @@
 <body>
     <nav>
         <div class="nav-container">
-          <a>
+          <a href="#home">
             <img src="src/csf_logo.jpg" alt="Logo" class="logo"/>
           </a>
+          
           <a href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#contact">Message Us</a>
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <span><a href="#home">Home</a></span>
+          <span><a href="#about">About</a></span>
+          <span><a href="#contact">Message Us</a></span>
         </div>
     </nav>
       
@@ -75,14 +81,17 @@
         <div class="s_icon">
           <!-- Facebook -->
         <a href="https://www.facebook.com/CSFNovaliches" class="fb">
-          <i class="fa fa-facebook-f" style="font-size:24px;color:white"> Christ's Servants Fellowship de Novaliches</i>
+          <i class="fa fa-facebook-f" style="font-size:24px;color:white"></i>
+          <span> Christ's Servants Fellowship de Novaliches</span>
         </a>
-
+        
 
         <!-- Email (Envelope) -->
-        <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRmTgVTwCGDDprtdStXZHgLhrsJWqrgtXDGFgDtphQscGxMHjMWtnBmPMHpDFLpwPkdSMml" class="email">
-          <i class="fa fa-envelope" style="font-size:24px;color:white"> csfyouthconvention@gmail.com</i>
+        <a href="mailto:csfyouthconvention@gmail.com" class="email">
+          <i class="fa fa-envelope" style="font-size:24px;color:white"></i>
+          <span>csfyouthconvention@gmail.com</span>
         </a>
+        
         </div>
         
 
@@ -99,9 +108,9 @@
           <a href="Legal/legal.html">Link B</a>
         </div>
         <div class="footer-column">
-          <h4>Help</h4>
-          <a href="#">Link A</a>
-          <a href="#">Link B</a>
+          <h4>Update</h4>
+          <a href="#">Previous Version</a>
+          <a href="#">Latest Version</a>
         </div>
         
       </div>
@@ -113,6 +122,13 @@
     </footer>
     
     <script src="script.js"></script>
+    <script>
+      function toggleMenu() {
+        const nav = document.querySelector('.nav-container');
+        nav.classList.toggle('active');
+      }
+    </script>
+    
 
   </body>
 </html>

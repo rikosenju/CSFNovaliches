@@ -224,7 +224,28 @@
   .s_icon {
     display: flex;
     justify-content: space-between;
+    color: white;
+  }
+
+  /* Style all font awesome icons */
+  .s_icon a {
+    text-decoration: none;  /* Removes underline */
+    color: white;         /* Inherits color from child or parent */
+  }
     
+  .s_icon a:visited,
+  .s_icon a:active,
+  .s_icon a:hover {
+    text-decoration: none;  /* Just to make sure on hover or visited it stays clean */
+    color: var(--accent-color);
+  }
+  .s_icon span {
+    color: white;
+    transition: color 0.3s ease;
+  }
+  .s_icon span:hover {
+    color: var(--accent-color);
+
   }
 
   .home-buttons {
@@ -303,10 +324,11 @@
     color: #ccc;
     text-decoration: none;
     font-size: 14px;
+    transition: color 0.3s ease;
   }
   
   .footer-column a:hover {
-    color: #fff;
+    color: var(--accent-color);
   }
   
   .footer-bottom {
@@ -321,27 +343,82 @@
     margin-bottom: 10px;
   }
   
-  /* Style all font awesome icons */
-  .s_icon a {
-    text-decoration: none;  /* Removes underline */
-    color: inherit;         /* Inherits color from child or parent */
-  }
+
   
-  .s_icon a:visited,
-  .s_icon a:active,
-  .s_icon a:hover {
-    text-decoration: none;  /* Just to make sure on hover or visited it stays clean */
-    color: var(--accent-color);
-  }
-  
-  .fb {
-    text-decoration: none;
-    color: white;
+ 
+
+  /* Responsive Navigation Menu */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  height: 3px;
+  width: 25px;
+  background: var(--accent-color);
+  margin: 4px 0;
+  border-radius: 2px;
+}
+
+/* Hide nav links on small screens */
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
   }
 
-  .fb:hover {
-    text-decoration: underline;
+  .menu-toggle {
+    display: flex;
   }
+
+  .nav-container {
+    width: 100%;
+    flex-direction: column;
+    gap: 15px;
+    display: none;
+    margin-top: 10px;
+  }
+
+  .nav-container.active {
+    display: flex;
+  }
+
+  .logo {
+    height: 60px;
+    width: 60px;
+  }
+}
+
+/* Responsive Info Sections */
+@media (max-width: 768px) {
+  .info-sections {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Sunday_Service,
+  .Events {
+    width: 90%;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column {
+    width: 100%;
+    text-align: center;
+  }
+
+  .s_icon {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
 
 
   
