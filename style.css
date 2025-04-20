@@ -1,0 +1,347 @@
+:root {
+    --bg-color: #0d1a21;
+    --accent-color: #d8a037;
+    --text-color: white;
+  }
+  body, html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    background-image: url(src/csf.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--text-color);
+  }
+  nav {
+    position: sticky;
+    top: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 10px 40px;
+    display: flex;
+    align-items: center; /* This is key */
+    justify-content: space-between;
+    z-index: 1000;
+    border-bottom: 1px solid var(--accent-color);
+  }
+  
+  .nav-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  nav a {
+    color: var(--accent-color);
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 8px 12px;
+    font-weight: bold;
+  }
+  
+  .logo {
+    height: 60px; /* smaller if needed */
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  nav a:hover {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    border-radius: 180px;
+  }
+  
+  section {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  #contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+    color: #000;
+  }
+  button {
+    padding: 10px 20px;
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  button:hover {
+    background-color: #b57f2a;
+  }
+
+  .logo {
+    height: 100px;
+    width: 100px;
+    border-radius: 180px;
+  }
+
+  .glassy-box {
+    background: rgba(216, 160, 55, 0.1); /* transparent white */
+    border-radius: 15px;
+    padding: 40px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(216, 160, 55, 0.808);
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid rgba(216, 160, 55, 0.808);
+    justify-content: space-around;
+  }
+
+  
+
+  .Sunday_Service {
+    background: rgba(17, 17, 17, 0.5); /* transparent white */
+    border-radius: 15px;
+    padding: 40px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(216, 160, 55, 0.808);
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid rgba(216, 160, 55, 0.808);
+    height: 500px;
+    width: 200px;
+    transition: transform 0.3s ease;
+    transform-origin: center;
+  }
+
+  .Sunday_Service:hover {
+    transform: scale(1.08);
+  }
+
+  .Events {
+    background: rgba(17, 17, 17, 0.5); /* transparent white */
+    border-radius: 15px;
+    padding: 40px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(216, 160, 55, 0.808);
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid rgba(216, 160, 55, 0.808);
+    height: 500px;
+    width: 200px;
+    transition: transform 0.3s ease;
+    transform-origin: center;
+  }
+
+  .Events:hover {
+    transform: scale(1.08);
+  }
+
+  .glassy-box
+  h1 {
+    font-family: sans-serif;
+    font-weight: 900;
+  }
+
+  .Sunday_Service h2 {
+    font-family: sans-serif;
+    font-weight: 800;
+  }
+
+  .Events h2 {
+    font-family: sans-serif;
+    font-weight: 800;
+  }
+
+  .About {
+    background: rgba(216, 160, 55, 0.1); /* transparent white */
+    border-radius: 15px;
+    padding: 40px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(216, 160, 55, 0.808);
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid rgba(216, 160, 55, 0.808);
+  }
+
+  .About h1 {
+    font-family: sans-serif;
+    font-weight: 900;
+  }
+
+  .About p {
+    font-family: sans-serif;
+    font-weight: 700;
+  }
+
+  .inAbout {
+    background: rgba(17, 17, 17, 0.5); /* transparent white */
+    border-radius: 15px;
+    padding: 40px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(216, 160, 55, 0.808);
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid rgba(216, 160, 55, 0.808);
+  }
+
+  .inAbout p {
+    font-family: sans-serif;
+    font-weight: 700;
+  }
+
+  .social {
+    
+    background: rgba(216, 160, 55, 0.1); /* transparent white */
+    border-radius: 15px;
+    padding: 40px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(216, 160, 55, 0.808);
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid rgba(216, 160, 55, 0.808);
+  }
+
+  .s_icon {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+
+  .home-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .btn {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+
+  }
+  
+  .btn:hover {
+    background-color: #b57f2a;
+    border: 1px solid rgba(216, 160, 55, 0.808);
+    box-shadow: 0 0 30px rgba(224, 183, 0, 0.808);
+  }
+  
+
+  .info-sections {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* allows stacking on smaller screens */
+    margin-top: 30px;
+  }
+  
+  .Sunday_Service,
+  .Events {
+    width: 300px; /* or whatever size fits nicely */
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer {
+    background-color: var(--bg-color); /* your dark background */
+    color: #fff;
+    padding: 40px 20px;
+    border-top: 1px solid var(--accent-color);
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-column {
+    flex: 1 1 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .footer-column h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .footer-column a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .footer-column a:hover {
+    color: #fff;
+  }
+  
+  .footer-bottom {
+    margin-top: 40px;
+    text-align: center;
+    opacity: 0.7;
+  }
+  
+  .footer-logo {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style all font awesome icons */
+  .s_icon a {
+    text-decoration: none;  /* Removes underline */
+    color: inherit;         /* Inherits color from child or parent */
+  }
+  
+  .s_icon a:visited,
+  .s_icon a:active,
+  .s_icon a:hover {
+    text-decoration: none;  /* Just to make sure on hover or visited it stays clean */
+    color: var(--accent-color);
+  }
+  
+  .fb {
+    text-decoration: none;
+    color: white;
+  }
+
+  .fb:hover {
+    text-decoration: underline;
+  }
+
+
+  
