@@ -64,6 +64,19 @@ border-radius: 4px;
     justify-content: space-around;
 }
 
+.sample {
+    background: rgba(216, 160, 55, 0.1); /* transparent white */
+    border-radius: 15px;
+    padding: 40px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(216, 160, 55, 0.808);
+    max-width: 450px;
+    margin: 0 auto;
+    border: 1px solid rgba(216, 160, 55, 0.808);
+    justify-content: space-between;
+}
+
 .btn {
   background-color: var(--accent-color);
   color: var(--bg-color);
